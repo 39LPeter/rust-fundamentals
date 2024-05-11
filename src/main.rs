@@ -57,7 +57,38 @@ fn main() {
         // println!("the sum of num_one and num_two{}",num_3);
       //   num_3
      //}
-     
+     //let number_1: i32 =101;
+     //let mut number_1_string: String =number_1.to_string();
+     //number_1_string.push_str("People in the room");
+     //println!("Hey{number_1_string}");
+     //let input_1="21";
+     //let _input_number:  i32= input_1.parse().expect("was expecting an  integer");
+     //. parse tells the compiler  input as a parameter
+
+    //println!("hey{_input_number}");
+    //casting
+    //let input_6: i16 = 200;
+    //let _input_7: i32 =input_6 as i32;
+    //println!("hey{_input_7}");
+// SLiCiNG
+     //let (_data,_status,_reason)=do_sum_maths(45,22);
+     //println!("Sum={_data} was it success{_status}reason: {_reason}");
+
+
+//ENUMS
+    const AGE: i32 =13;
+    #[derive(Debug)]
+    enum STATUS {
+        ADULT, CHILD
+    }
+    let user_status: STATUS =if AGE >18{
+        STATUS::ADULT
+    }else{
+        STATUS::CHILD
+    };
+    println!("The status is{:?}",user_status);
+
+
      //let b: i32=5;
      //if a>b {
          //println!("a is greater than b")
@@ -67,20 +98,20 @@ fn main() {
      //if a b {
          //println!("a is less than b")
      //}
-     let mut counter: i32 = 0;
+     //let mut counter: i32 = 0;
 
-     loop {
-         counter = counter + 1;
-         println!("I am at number {}", counter); // Changed {counter} to {}
+     //loop {
+         //counter = counter + 1;
+         //println!("I am at number {}", counter); // Changed {counter} to {}
  
-         if counter == 1 {
-             println!("Starting point");
-         }
+         //if counter == 1 {
+            // println!("Starting point");
+//}
  
-         if counter == 10 {
-             break;
-         }
-     }
+         //if counter == 10 {
+           //  break;
+         //}
+     //}
    
 
     //let mut _array=[1,2,3,4,5,6,7,8,9];
@@ -99,4 +130,9 @@ fn main() {
         //println!("the result is  {num}");
 //}
     //println!("LIFTOFF!!!")
+    
 }
+//fn do_sum_maths(_par_1: i32 ,_par_2: i32)->(i32, bool,String){
+   // return(par_1+par_2,true,"success".to_string())
+    //return (0,false,"failed for some reason ".to_string())
+//}
